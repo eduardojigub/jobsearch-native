@@ -19,6 +19,13 @@ An application to search for jobs
 - Filter jobs
 - And others
 
+## How to Run:
+`use git clone` to clone the project to your machine
+`run` npm install
+and then `npx expo start`
+
+Please make sure you have an mobile device emulator installed. 
+
 ## :thought_balloon: Contact
 
 - GitHub - [Eduardo Sousa](https://github.com/eduardojigub)
