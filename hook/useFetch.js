@@ -16,15 +16,6 @@ const useFetch = (endpoint, query) => {
     params: { ...query },
   };
 
-  axios
-    .request(options)
-    .then(function (response) {
-      console.log(response.data);
-    })
-    .catch(function (error) {
-      console.error(error);
-    });
-
   const fetchData = async () => {
     setIsLoading(true);
     try {
@@ -33,7 +24,7 @@ const useFetch = (endpoint, query) => {
       setIsLoading(false);
     } catch (error) {
       setError(error);
-      alert('There is an error');
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
